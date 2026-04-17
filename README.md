@@ -29,6 +29,11 @@ city_prediction_project/
 |_README.md
 🚀 How to Run
 
+
+
+
+
+
 1. Install dependencies
    pip install -r requirements.txt
 
