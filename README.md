@@ -13,26 +13,21 @@ This project predicts future urban expansion using an Artificial Neural Network 
 Raster Data Loading → Data Preprocessing → Feature Extraction → ANN Training → Transition Prediction → Cellular Automata → Future Map Generation → Visualization
 
 📂 Project Structure
-city_prediction_project/
+LULC-CA-Markov-Prediction/
 │
-├── input_data/         # LULC raster files (GeoTIFF)
-├── scripts/            # Python implementation
-|   ├── imorts
-│   ├── userinputs
-│   ├── CA function
-│   ├── train_ann
-│   ├──  SIMULATION
-│   └── MAIN
+├── data/                # Input raster files (2015, 2020, 2025)
+├── output/              # Predicted rasters (2035, 2045)
+├── scripts/             # Core implementation
+│   ├── load_data.py
+│   ├── transition_matrix.py
+│   ├── markov_model.py
+│   ├── cellular_automata.py
+│   └── predict.py
 │
-├── output/             # Predicted maps & results
 ├── requirements.txt
-|_README.md
+└── README.md
+
 🚀 How to Run
-
-
-
-
-
 
 1. Install dependencies
    pip install -r requirements.txt
